@@ -1,20 +1,20 @@
+
 package com.example.pc.taskapplication;
 
-/**
- * Created by PC on 2018-03-12.
- */
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
-public class Currency {
+public class Example {
 
+    @SerializedName("base")
+    @Expose
     private String base;
+    @SerializedName("date")
+    @Expose
     private String date;
+    @SerializedName("rates")
+    @Expose
     private Rates rates;
-
-    public Currency(String base, String date, Rates rates) {
-        this.base = base;
-        this.date = date;
-        this.rates = rates;
-    }
 
     public String getBase() {
         return base;
@@ -34,6 +34,10 @@ public class Currency {
 
     public Rates getRates() {
         return rates;
+    }
+
+    public void setRates(Rates rates) {
+        this.rates = rates;
     }
 
 }

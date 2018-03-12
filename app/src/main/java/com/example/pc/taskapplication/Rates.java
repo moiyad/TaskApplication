@@ -1,336 +1,365 @@
+
 package com.example.pc.taskapplication;
 
-/**
- * Created by PC on 2018-03-12.
- */
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 public class Rates {
-    private Double aUD;
-    private Double bGN;
-    private Double bRL;
-    private Double cAD;
-    private Double cHF;
-    private Double cNY;
-    private Double cZK;
-    private Double dKK;
-    private Double gBP;
-    private Double hKD;
-    private Double hRK;
-    private Double hUF;
-    private Integer iDR;
-    private Double iLS;
-    private Double iNR;
-    private Double iSK;
-    private Double jPY;
-    private Double kRW;
-    private Double mXN;
-    private Double mYR;
-    private Double nOK;
-    private Double nZD;
-    private Double pHP;
-    private Double pLN;
-    private Double rON;
-    private Double rUB;
-    private Double sEK;
-    private Double sGD;
-    private Double tHB;
-    private Double tRY;
-    private Double uSD;
-    private Double zAR;
 
-    public Double getaUD() {
+    @SerializedName("AUD")
+    @Expose
+    private float aUD;
+    @SerializedName("BGN")
+    @Expose
+    private float bGN;
+    @SerializedName("BRL")
+    @Expose
+    private float bRL;
+    @SerializedName("CAD")
+    @Expose
+    private float cAD;
+    @SerializedName("CHF")
+    @Expose
+    private float cHF;
+    @SerializedName("CNY")
+    @Expose
+    private float cNY;
+    @SerializedName("CZK")
+    @Expose
+    private float cZK;
+    @SerializedName("DKK")
+    @Expose
+    private float dKK;
+    @SerializedName("GBP")
+    @Expose
+    private float gBP;
+    @SerializedName("HKD")
+    @Expose
+    private float hKD;
+    @SerializedName("HRK")
+    @Expose
+    private float hRK;
+    @SerializedName("HUF")
+    @Expose
+    private float hUF;
+    @SerializedName("IDR")
+    @Expose
+    private int iDR;
+    @SerializedName("ILS")
+    @Expose
+    private float iLS;
+    @SerializedName("INR")
+    @Expose
+    private float iNR;
+    @SerializedName("ISK")
+    @Expose
+    private float iSK;
+    @SerializedName("JPY")
+    @Expose
+    private float jPY;
+    @SerializedName("KRW")
+    @Expose
+    private float kRW;
+    @SerializedName("MXN")
+    @Expose
+    private float mXN;
+    @SerializedName("MYR")
+    @Expose
+    private float mYR;
+    @SerializedName("NOK")
+    @Expose
+    private float nOK;
+    @SerializedName("NZD")
+    @Expose
+    private float nZD;
+    @SerializedName("PHP")
+    @Expose
+    private float pHP;
+    @SerializedName("PLN")
+    @Expose
+    private float pLN;
+    @SerializedName("RON")
+    @Expose
+    private float rON;
+    @SerializedName("RUB")
+    @Expose
+    private float rUB;
+    @SerializedName("SEK")
+    @Expose
+    private float sEK;
+    @SerializedName("SGD")
+    @Expose
+    private float sGD;
+    @SerializedName("THB")
+    @Expose
+    private float tHB;
+    @SerializedName("TRY")
+    @Expose
+    private float tRY;
+    @SerializedName("USD")
+    @Expose
+    private float uSD;
+    @SerializedName("ZAR")
+    @Expose
+    private float zAR;
+
+    public float getAUD() {
         return aUD;
     }
 
-    public Double getbGN() {
+    public void setAUD(float aUD) {
+        this.aUD = aUD;
+    }
+
+    public float getBGN() {
         return bGN;
     }
 
-    public Double getbRL() {
+    public void setBGN(float bGN) {
+        this.bGN = bGN;
+    }
+
+    public float getBRL() {
         return bRL;
     }
 
-    public Double getcAD() {
+    public void setBRL(float bRL) {
+        this.bRL = bRL;
+    }
+
+    public float getCAD() {
         return cAD;
     }
 
-    public Double getcHF() {
+    public void setCAD(float cAD) {
+        this.cAD = cAD;
+    }
+
+    public float getCHF() {
         return cHF;
     }
 
-    public Double getcNY() {
+    public void setCHF(float cHF) {
+        this.cHF = cHF;
+    }
+
+    public float getCNY() {
         return cNY;
     }
 
-    public Rates(Double aUD, Double bGN, Double bRL, Double cAD, Double cHF, Double cNY,
-                 Double cZK, Double dKK, Double gBP, Double hKD, Double hRK, Double hUF,
-                 Integer iDR, Double iLS, Double iNR, Double iSK, Double jPY, Double kRW,
-                 Double mXN, Double mYR, Double nOK, Double nZD, Double pHP, Double pLN,
-                 Double rON, Double rUB, Double sEK, Double sGD, Double tHB, Double tRY, Double uSD, Double zAR) {
-        this.aUD = aUD;
-        this.bGN = bGN;
-        this.bRL = bRL;
-        this.cAD = cAD;
-        this.cHF = cHF;
+    public void setCNY(float cNY) {
         this.cNY = cNY;
-        this.cZK = cZK;
-        this.dKK = dKK;
-        this.gBP = gBP;
-        this.hKD = hKD;
-        this.hRK = hRK;
-        this.hUF = hUF;
-        this.iDR = iDR;
-        this.iLS = iLS;
-        this.iNR = iNR;
-        this.iSK = iSK;
-        this.jPY = jPY;
-        this.kRW = kRW;
-        this.mXN = mXN;
-        this.mYR = mYR;
-        this.nOK = nOK;
-        this.nZD = nZD;
-        this.pHP = pHP;
-        this.pLN = pLN;
-        this.rON = rON;
-        this.rUB = rUB;
-        this.sEK = sEK;
-        this.sGD = sGD;
-        this.tHB = tHB;
-        this.tRY = tRY;
-        this.uSD = uSD;
-        this.zAR = zAR;
     }
 
-    public Double getcZK() {
-
+    public float getCZK() {
         return cZK;
     }
 
-    public Double getdKK() {
-        return dKK;
-    }
-
-    public void setaUD(Double aUD) {
-        this.aUD = aUD;
-    }
-
-    public void setbGN(Double bGN) {
-        this.bGN = bGN;
-    }
-
-    public void setbRL(Double bRL) {
-        this.bRL = bRL;
-    }
-
-    public void setcAD(Double cAD) {
-        this.cAD = cAD;
-    }
-
-    public void setcHF(Double cHF) {
-        this.cHF = cHF;
-    }
-
-    public void setcNY(Double cNY) {
-        this.cNY = cNY;
-    }
-
-    public void setcZK(Double cZK) {
+    public void setCZK(float cZK) {
         this.cZK = cZK;
     }
 
-    public void setdKK(Double dKK) {
+    public float getDKK() {
+        return dKK;
+    }
+
+    public void setDKK(float dKK) {
         this.dKK = dKK;
     }
 
-    public void setgBP(Double gBP) {
-        this.gBP = gBP;
-    }
-
-    public void sethKD(Double hKD) {
-        this.hKD = hKD;
-    }
-
-    public void sethRK(Double hRK) {
-        this.hRK = hRK;
-    }
-
-    public void sethUF(Double hUF) {
-        this.hUF = hUF;
-    }
-
-    public void setiDR(Integer iDR) {
-        this.iDR = iDR;
-    }
-
-    public void setiLS(Double iLS) {
-        this.iLS = iLS;
-    }
-
-    public void setiNR(Double iNR) {
-        this.iNR = iNR;
-    }
-
-    public void setiSK(Double iSK) {
-        this.iSK = iSK;
-    }
-
-    public void setjPY(Double jPY) {
-        this.jPY = jPY;
-    }
-
-    public void setkRW(Double kRW) {
-        this.kRW = kRW;
-    }
-
-    public void setmXN(Double mXN) {
-        this.mXN = mXN;
-    }
-
-    public void setmYR(Double mYR) {
-        this.mYR = mYR;
-    }
-
-    public void setnOK(Double nOK) {
-        this.nOK = nOK;
-    }
-
-    public void setnZD(Double nZD) {
-        this.nZD = nZD;
-    }
-
-    public void setpHP(Double pHP) {
-        this.pHP = pHP;
-    }
-
-    public void setpLN(Double pLN) {
-        this.pLN = pLN;
-    }
-
-    public void setrON(Double rON) {
-        this.rON = rON;
-    }
-
-    public void setrUB(Double rUB) {
-        this.rUB = rUB;
-    }
-
-    public void setsEK(Double sEK) {
-        this.sEK = sEK;
-    }
-
-    public void setsGD(Double sGD) {
-        this.sGD = sGD;
-    }
-
-    public void settHB(Double tHB) {
-        this.tHB = tHB;
-    }
-
-    public void settRY(Double tRY) {
-        this.tRY = tRY;
-    }
-
-    public void setuSD(Double uSD) {
-        this.uSD = uSD;
-    }
-
-    public void setzAR(Double zAR) {
-        this.zAR = zAR;
-    }
-
-    public Double getgBP() {
+    public float getGBP() {
         return gBP;
     }
 
-    public Double gethKD() {
+    public void setGBP(float gBP) {
+        this.gBP = gBP;
+    }
+
+    public float getHKD() {
         return hKD;
     }
 
-    public Double gethRK() {
+    public void setHKD(float hKD) {
+        this.hKD = hKD;
+    }
+
+    public float getHRK() {
         return hRK;
     }
 
-    public Double gethUF() {
+    public void setHRK(float hRK) {
+        this.hRK = hRK;
+    }
+
+    public float getHUF() {
         return hUF;
     }
 
-    public Integer getiDR() {
+    public void setHUF(float hUF) {
+        this.hUF = hUF;
+    }
+
+    public int getIDR() {
         return iDR;
     }
 
-    public Double getiLS() {
+    public void setIDR(int iDR) {
+        this.iDR = iDR;
+    }
+
+    public float getILS() {
         return iLS;
     }
 
-    public Double getiNR() {
+    public void setILS(float iLS) {
+        this.iLS = iLS;
+    }
+
+    public float getINR() {
         return iNR;
     }
 
-    public Double getiSK() {
+    public void setINR(float iNR) {
+        this.iNR = iNR;
+    }
+
+    public float getISK() {
         return iSK;
     }
 
-    public Double getjPY() {
+    public void setISK(float iSK) {
+        this.iSK = iSK;
+    }
+
+    public float getJPY() {
         return jPY;
     }
 
-    public Double getkRW() {
+    public void setJPY(float jPY) {
+        this.jPY = jPY;
+    }
+
+    public float getKRW() {
         return kRW;
     }
 
-    public Double getmXN() {
+    public void setKRW(float kRW) {
+        this.kRW = kRW;
+    }
+
+    public float getMXN() {
         return mXN;
     }
 
-    public Double getmYR() {
+    public void setMXN(float mXN) {
+        this.mXN = mXN;
+    }
+
+    public float getMYR() {
         return mYR;
     }
 
-    public Double getnOK() {
+    public void setMYR(float mYR) {
+        this.mYR = mYR;
+    }
+
+    public float getNOK() {
         return nOK;
     }
 
-    public Double getnZD() {
+    public void setNOK(float nOK) {
+        this.nOK = nOK;
+    }
+
+    public float getNZD() {
         return nZD;
     }
 
-    public Double getpHP() {
+    public void setNZD(float nZD) {
+        this.nZD = nZD;
+    }
+
+    public float getPHP() {
         return pHP;
     }
 
-    public Double getpLN() {
+    public void setPHP(float pHP) {
+        this.pHP = pHP;
+    }
+
+    public float getPLN() {
         return pLN;
     }
 
-    public Double getrON() {
+    public void setPLN(float pLN) {
+        this.pLN = pLN;
+    }
+
+    public float getRON() {
         return rON;
     }
 
-    public Double getrUB() {
+    public void setRON(float rON) {
+        this.rON = rON;
+    }
+
+    public float getRUB() {
         return rUB;
     }
 
-    public Double getsEK() {
+    public void setRUB(float rUB) {
+        this.rUB = rUB;
+    }
+
+    public float getSEK() {
         return sEK;
     }
 
-    public Double getsGD() {
+    public void setSEK(float sEK) {
+        this.sEK = sEK;
+    }
+
+    public float getSGD() {
         return sGD;
     }
 
-    public Double gettHB() {
+    public void setSGD(float sGD) {
+        this.sGD = sGD;
+    }
+
+    public float getTHB() {
         return tHB;
     }
 
-    public Double gettRY() {
+    public void setTHB(float tHB) {
+        this.tHB = tHB;
+    }
+
+    public float getTRY() {
         return tRY;
     }
 
-    public Double getuSD() {
+    public void setTRY(float tRY) {
+        this.tRY = tRY;
+    }
+
+    public float getUSD() {
         return uSD;
     }
 
-    public Double getzAR() {
+    public void setUSD(float uSD) {
+        this.uSD = uSD;
+    }
+
+    public float getZAR() {
         return zAR;
     }
+
+    public void setZAR(float zAR) {
+        this.zAR = zAR;
+    }
+
 }
+
+
+

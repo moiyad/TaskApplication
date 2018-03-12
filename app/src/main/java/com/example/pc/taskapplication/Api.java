@@ -13,5 +13,5 @@ public interface Api {
 
     String BASE_URL ="https://api.fixer.io/";
     @GET("latest")
-    Call<Currency> getCurrency();
+    Call<Example> getExample();
 }
